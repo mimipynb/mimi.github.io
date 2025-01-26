@@ -26,7 +26,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/mimipynb.github.io  # Online location of your book
+  url: https://github.com/mimipynb/playground # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
@@ -36,6 +36,24 @@ html:
   use_issues_button: true
   use_repository_button: true
 
-remote_theme: pages-themes/minimal@v0.2.0
+theme: jekyll-theme-chirpy
+#remote_theme: pages-themes/minimal@v0.2.0
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  #- jekyll-theme-dark-reader # add this line to the plugins list if you already have one
+  - jekyll-paginate
+  - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+theme_mode: dark
+
+social:
+  # Change to your full name.
+  # It will be displayed as the default author of the posts and the copyright owner in the Footer
+  name: Mimi Phan
+  email: phan.mimi@outlook.com # change to your email address
+  links:
+    - https://mimiphanblog.wordpress.com 
+    - https://github.com/mimipynb # change to your GitHub homepage
+    - https://huggingface/darthfalka
